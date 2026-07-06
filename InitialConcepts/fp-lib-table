@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "NVM")(type "KiCad")(uri "${KIPRJMOD}/NVM.pretty")(options "")(descr "Nanovoltmeter custom footprints"))
+)
