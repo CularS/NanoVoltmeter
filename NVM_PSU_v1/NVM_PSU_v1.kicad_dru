@@ -1,0 +1,10 @@
+(version 1)
+
+# Primary-to-secondary isolation barrier.
+# Mains copper (MAINS class) must keep 4 mm from all secondary-side copper.
+# MAINS-to-EARTH and MAINS-to-MAINS spacing is governed by the MAINS
+# net class clearance (2.0 mm).
+(rule "mains_to_secondary_isolation"
+	(condition "A.hasNetclass('MAINS') && !B.hasNetclass('MAINS') && !B.hasNetclass('EARTH')")
+	(constraint clearance (min 4mm))
+)
