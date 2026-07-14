@@ -48,8 +48,17 @@
 #define PIN_K3_RST        25
 #define PIN_K4_SET        33   // cal:   SET = 100k across input
 #define PIN_K4_RST        34
-#define PIN_K5_SET        40   // mode:  SET = SSR chop bridge in path (low-Z)
-#define PIN_K5_RST        41   //        RESET = source direct (high-Z)
+// Mode select is now an SSR *level* (SEC7 fail-open switch, K5 deleted):
+// FE J7 pin c14 DIRECT_L.  HIGH = source-direct high-Z path (direct SSR
+// pair U24/U25 + U26/U27 on); LOW = chop-bridge low-Z path (bridge U4-U11).
+#define PIN_DIRECT        40   // HIGH = direct (high-Z), LOW = chop bridge
+// SEC7 over-voltage trip status, FE J7 pin c15 FAULT_N (open-drain,
+// active LOW): LOW = input protection tripped (depletion FETs disconnected).
+#define PIN_FAULT         41   // INPUT_PULLUP; LOW = fault latched
+
+// Not driven by the Teensy:
+//   FE J7 c13 LDAC_N  -> tied low on the FE (DAC uses write-and-update).
+//   FE J7 c16 COIL_COM-> relay/SSR coil-supply return, wired to +5VD.
 
 // (No front-panel buttons — the UI is driven entirely by the
 //  XPT2046 touchscreen and the web dashboard.)

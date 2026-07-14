@@ -6563,6 +6563,548 @@
 		(pin passive line (at 3.81 -8.89 90) (length 3.81) (name "GND" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
 		)
 		)
+	
+		(symbol "Comparator:LM2903"
+				(pin_names
+					(offset 0.127)
+				)
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(in_pos_files yes)
+				(duplicate_pin_numbers_are_jumpers no)
+				(property "Reference" "U"
+					(at 3.81 3.81 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Value" "LM2903"
+					(at 6.35 -3.81 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Footprint" ""
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm393.pdf"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Description" "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/SOP-8/TSSOP-8/VSSOP-8"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_locked" ""
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_keywords" "cmp open collector"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(symbol "LM2903_1_1"
+					(polyline
+						(pts
+							(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+						)
+						(stroke
+							(width 0.254)
+							(type default)
+						)
+						(fill
+							(type background)
+						)
+					)
+					(polyline
+						(pts
+							(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+							(xy 2.286 -0.508)
+						)
+						(stroke
+							(width 0.127)
+							(type default)
+						)
+						(fill
+							(type none)
+						)
+					)
+					(pin open_collector line
+						(at 7.62 0 180)
+						(length 2.54)
+						(name ""
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "1"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin input line
+						(at -7.62 -2.54 0)
+						(length 2.54)
+						(name "-"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "2"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin input line
+						(at -7.62 2.54 0)
+						(length 2.54)
+						(name "+"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "3"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+				)
+				(symbol "LM2903_2_1"
+					(polyline
+						(pts
+							(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+						)
+						(stroke
+							(width 0.254)
+							(type default)
+						)
+						(fill
+							(type background)
+						)
+					)
+					(polyline
+						(pts
+							(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+							(xy 2.286 -0.508)
+						)
+						(stroke
+							(width 0.127)
+							(type default)
+						)
+						(fill
+							(type none)
+						)
+					)
+					(pin input line
+						(at -7.62 2.54 0)
+						(length 2.54)
+						(name "+"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "5"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin input line
+						(at -7.62 -2.54 0)
+						(length 2.54)
+						(name "-"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "6"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin open_collector line
+						(at 7.62 0 180)
+						(length 2.54)
+						(name ""
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "7"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+				)
+				(symbol "LM2903_3_1"
+					(pin power_in line
+						(at -2.54 -7.62 90)
+						(length 3.81)
+						(name "V-"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "4"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin power_in line
+						(at -2.54 7.62 270)
+						(length 3.81)
+						(name "V+"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "8"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+				)
+				(embedded_fonts no)
+			)
+		(symbol "74xGxx:74AUC1G74"
+				(pin_names
+					(offset 1.016)
+				)
+				(exclude_from_sim no)
+				(in_bom yes)
+				(on_board yes)
+				(in_pos_files yes)
+				(duplicate_pin_numbers_are_jumpers no)
+				(property "Reference" "U"
+					(at -5.08 10.16 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Value" "74AUC1G74"
+					(at 10.16 -10.16 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Footprint" ""
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "Description" "Single D Flip-Flop, Low-Voltage CMOS"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_keywords" "Single D Flip-Flop D CMOS"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(property "ki_fp_filters" "SSOP* VSSOP*"
+					(at 0 0 0)
+					(show_name no)
+					(do_not_autoplace no)
+					(hide yes)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(symbol "74AUC1G74_0_1"
+					(rectangle
+						(start -7.62 7.62)
+						(end 7.62 -7.62)
+						(stroke
+							(width 0.254)
+							(type default)
+						)
+						(fill
+							(type background)
+						)
+					)
+				)
+				(symbol "74AUC1G74_1_1"
+					(pin input clock
+						(at -12.7 -5.08 0)
+						(length 5.08)
+						(name "C"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "1"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin input line
+						(at -12.7 5.08 0)
+						(length 5.08)
+						(name "D"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "2"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin output line
+						(at 12.7 -5.08 180)
+						(length 5.08)
+						(name "~{Q}"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "3"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin power_in line
+						(at 2.54 -12.7 90)
+						(length 5.08)
+						(name "GND"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "4"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin output line
+						(at 12.7 5.08 180)
+						(length 5.08)
+						(name "Q"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "5"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin input line
+						(at -2.54 -12.7 90)
+						(length 5.08)
+						(name "~{CLR}"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "6"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin input line
+						(at -2.54 12.7 270)
+						(length 5.08)
+						(name "~{PRE}"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "7"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+					(pin power_in line
+						(at 2.54 12.7 270)
+						(length 5.08)
+						(name "VCC"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+						(number "8"
+							(effects
+								(font
+									(size 1.27 1.27)
+								)
+							)
+						)
+					)
+				)
+				(embedded_fonts no)
+			)
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -6975,115 +7517,6 @@
 			(project "nanovoltmeter_fe"
 				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay:AZ850P2-x")
-		(at 130 55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fb08093f-fc0d-4172-ac4f-fbf51489563d")
-		(property "Reference" "K5"
-			(at 133 47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TQ2-L2-5V MODE"
-			(at 133 49.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "NVM:Relay_TQ2_THT"
-			(at 130 55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130 55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bridge fully disconnected upstream in high-Z mode -> SSR leakage floats"
-			(at 130 55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TQ2-L2-5V"
-			(at 130 55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKeyPN" "255-1007-5-ND"
-			(at 130 55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7bf81e6c-dd8e-4ba4-9f11-1e15d7bc152f")
-		)
-		(pin "2"
-			(uuid "e0efdb2d-f382-4fd2-8425-19c647fcea72")
-		)
-		(pin "3"
-			(uuid "67dd4894-5160-4e3e-a6b4-6ff1aeaddb85")
-		)
-		(pin "4"
-			(uuid "6ac4bd9c-a391-45f9-8218-5e8e888a9355")
-		)
-		(pin "5"
-			(uuid "b95769d2-afd6-4ef1-85ef-31e78b822852")
-		)
-		(pin "6"
-			(uuid "5ef4c6da-d510-4669-b542-e745bf76ee26")
-		)
-		(pin "7"
-			(uuid "724cada7-a675-4fc5-bb4b-937d8528eaa7")
-		)
-		(pin "8"
-			(uuid "24aca4b7-bf99-46e1-836a-338cda9e1572")
-		)
-		(pin "9"
-			(uuid "d009df0e-d3b6-4387-85b7-64a7f3a5f917")
-		)
-		(pin "10"
-			(uuid "2e5f2c7b-253d-40d5-a48f-cd6b62a8f7e8")
-		)
-		(instances
-			(project "nanovoltmeter_fe"
-				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
-					(reference "K5")
 					(unit 1)
 				)
 			)
@@ -17943,116 +18376,6 @@
 	)
 	(global_label "COIL_COM"
 		(shape passive)
-		(at 117.3 47.38 90)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "1cc183c1-19cd-402e-ad77-c0ef7157429b")
-	)
-	(global_label "CH_A"
-		(shape passive)
-		(at 127.46 47.38 90)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "330c4692-7fff-4323-9be0-536a249dd400")
-	)
-	(global_label "HI_F"
-		(shape passive)
-		(at 130 62.62 270)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify right)
-		)
-		(uuid "6f374eef-b526-4fc4-8f6c-07a160a7cb9a")
-	)
-	(global_label "BR_HI"
-		(shape passive)
-		(at 132.54 47.38 90)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "bd982176-153e-4fba-8ee9-0cd5c07c5161")
-	)
-	(global_label "K5_RST"
-		(shape passive)
-		(at 122.38 47.38 90)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "69bb3c44-bc1c-421a-93d9-7c870a30f506")
-	)
-	(global_label "K5_SET"
-		(shape passive)
-		(at 122.38 62.62 270)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify right)
-		)
-		(uuid "cdf6d50c-8b8d-4e56-a5a2-bdf819b9c287")
-	)
-	(global_label "BR_LO"
-		(shape passive)
-		(at 142.7 47.38 90)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "24b12b8a-6917-47ff-aee4-8c11a0664d8c")
-	)
-	(global_label "LO_F"
-		(shape passive)
-		(at 140.16 62.62 270)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify right)
-		)
-		(uuid "1736dcec-2600-47c7-be6d-935dbb25a63a")
-	)
-	(global_label "STAR"
-		(shape passive)
-		(at 137.62 47.38 90)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "29f35d29-2d29-4d47-b93b-5f79af8363f2")
-	)
-	(global_label "COIL_COM"
-		(shape passive)
-		(at 117.3 62.62 270)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify right)
-		)
-		(uuid "af707fb9-768f-43ef-8156-d0b7f7b80336")
-	)
-	(global_label "COIL_COM"
-		(shape passive)
 		(at 157.3 47.38 90)
 		(effects
 			(font
@@ -18425,7 +18748,7 @@
 		)
 		(uuid "d8f20581-2089-4736-8089-dd791f88adf2")
 	)
-	(global_label "BR_HI"
+	(global_label "HI_P"
 		(shape passive)
 		(at 67.62 90.54 0)
 		(effects
@@ -18469,7 +18792,7 @@
 		)
 		(uuid "d3a0a6fe-6809-4cb4-a166-e65cae76c31c")
 	)
-	(global_label "BR_HI"
+	(global_label "HI_P"
 		(shape passive)
 		(at 87.62 90.54 0)
 		(effects
@@ -18513,7 +18836,7 @@
 		)
 		(uuid "fff968ce-a7ce-440b-8400-629b3e4ba10d")
 	)
-	(global_label "BR_LO"
+	(global_label "LO_F"
 		(shape passive)
 		(at 107.62 90.54 0)
 		(effects
@@ -18557,7 +18880,7 @@
 		)
 		(uuid "32693bee-3cfd-4fad-b6a8-c0d022d9af75")
 	)
-	(global_label "BR_LO"
+	(global_label "LO_F"
 		(shape passive)
 		(at 127.62 90.54 0)
 		(effects
@@ -18601,7 +18924,7 @@
 		)
 		(uuid "9ea3d66e-5844-4e33-a421-e32a8738bf75")
 	)
-	(global_label "BR_HI"
+	(global_label "HI_P"
 		(shape passive)
 		(at 147.62 90.54 0)
 		(effects
@@ -18645,7 +18968,7 @@
 		)
 		(uuid "dfc44f0b-5707-4e9f-a3b4-8cb275951588")
 	)
-	(global_label "BR_HI"
+	(global_label "HI_P"
 		(shape passive)
 		(at 167.62 90.54 0)
 		(effects
@@ -18689,7 +19012,7 @@
 		)
 		(uuid "47f0ae4e-9097-459d-8334-12c287e2bb06")
 	)
-	(global_label "BR_LO"
+	(global_label "LO_F"
 		(shape passive)
 		(at 187.62 90.54 0)
 		(effects
@@ -18733,7 +19056,7 @@
 		)
 		(uuid "f28d7227-bb61-433f-8208-d1a1c3ea4d6d")
 	)
-	(global_label "BR_LO"
+	(global_label "LO_F"
 		(shape passive)
 		(at 207.62 90.54 0)
 		(effects
@@ -21428,7 +21751,7 @@
 		)
 		(uuid "11b5a360-9865-402c-989e-c2c454785fc8")
 	)
-	(global_label "K5_SET"
+	(global_label "DIRECT_L"
 		(shape passive)
 		(at 144.92 390.16 180)
 		(effects
@@ -21439,7 +21762,7 @@
 		)
 		(uuid "250f0c52-3ed5-43d6-9b1b-78618fb54bcf")
 	)
-	(global_label "K5_RST"
+	(global_label "FAULT_N"
 		(shape passive)
 		(at 144.92 392.7 180)
 		(effects
@@ -22329,6 +22652,2897 @@
 			(justify left)
 		)
 		(uuid "59f26ed9-6128-45a1-84b2-f154678aaec4")
+	)
+	(symbol
+		(lib_id "Device:Q_NJFET_DGS")
+		(at 370 60 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d331adc5-cb22-4eb6-aee8-b5efed9b95d9")
+		(property "Reference" "Q20"
+			(at 373 52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DN2540N8 depl (norm-ON)"
+			(at 373 54.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NVM:SOT-89-3"
+			(at 370 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 370 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 series depletion MOSFET, HI leg (D=in,S=mid)"
+			(at 370 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DN2540N8-G"
+			(at 370 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3165d0f7-95da-4f0e-86f6-a7a603bb9c1d")
+		)
+		(pin "2"
+			(uuid "4f35037f-d661-45f8-bc5b-350261938d2c")
+		)
+		(pin "3"
+			(uuid "683a4e10-6f04-439a-ad7a-a677fd846636")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "Q20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NJFET_DGS")
+		(at 395 60 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "db43c1d3-3d2d-48cc-9824-5b08d41a6b81")
+		(property "Reference" "Q21"
+			(at 398 52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DN2540N8 depl (norm-ON)"
+			(at 398 54.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NVM:SOT-89-3"
+			(at 395 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 395 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 series depletion MOSFET, ADC leg (D=out,S=mid)"
+			(at 395 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DN2540N8-G"
+			(at 395 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c78084f-5ebc-4794-bb9a-138ecfdf3a9b")
+		)
+		(pin "2"
+			(uuid "2f799883-99b0-4c19-9fe6-3b8168fa4368")
+		)
+		(pin "3"
+			(uuid "0aab7d5e-9a43-430f-a176-be138aef892e")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "Q21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 382 72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "844d40c3-836a-49cf-81b5-787888c89ab5")
+		(property "Reference" "R56"
+			(at 385 64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 385 66.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 382 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 382 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 gate-source bias Rg (Vgs=0 => ON)"
+			(at 382 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 382 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc548407-1efb-41d0-becd-529e2facec05")
+		)
+		(pin "2"
+			(uuid "f5be578f-676e-4aee-9e8d-c03cf0603b85")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NJFET_DGS")
+		(at 420 60 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4327cb1-8ed5-4892-ba7e-958ed622218d")
+		(property "Reference" "Q22"
+			(at 423 52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2N4117A clamp"
+			(at 423 54.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NVM:TO-72-4"
+			(at 420 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 420 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 HI_P clamp: G=anode HI_P, D+S=cathode STAR"
+			(at 420 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2N4117A TO-72 4L"
+			(at 420 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a1761b6-ce3d-4794-a56f-293b43feff6a")
+		)
+		(pin "2"
+			(uuid "db425161-8d5c-4934-856c-7ce19770f9f0")
+		)
+		(pin "3"
+			(uuid "923f1f91-9afb-4c6b-9a52-d32fe5ef0672")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "Q22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NJFET_DGS")
+		(at 438 60 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb2e4c5f-0ad2-4b27-8812-f777df3ac791")
+		(property "Reference" "Q23"
+			(at 441 52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2N4117A clamp"
+			(at 441 54.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NVM:TO-72-4"
+			(at 438 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 HI_P clamp anti-parallel partner"
+			(at 438 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2N4117A TO-72 4L"
+			(at 438 60 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3db32efb-4bdc-47b7-bcc0-84baf8cc98dc")
+		)
+		(pin "2"
+			(uuid "6dfa01cb-0930-4398-b607-22bd77d44012")
+		)
+		(pin "3"
+			(uuid "022eb4fa-2274-49fd-b38a-574dfeeed833")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "Q23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay_SolidState:AQY282GS")
+		(at 400 95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4de50c6-3f77-4592-8353-31f1331416ad")
+		(property "Reference" "U21"
+			(at 403 87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQY221N2MY"
+			(at 403 89.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OptoDevice:Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm"
+			(at 400 95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 400 95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 trip SSR: ON pulls GPROT to -12V (FETs OFF)"
+			(at 400 95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AQY221N2MY"
+			(at 400 95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80e49695-3f7e-4f14-aafe-69342829b26a")
+		)
+		(pin "2"
+			(uuid "83e6f6aa-7311-4beb-ae63-63a7dceac121")
+		)
+		(pin "3"
+			(uuid "695cec33-a1be-4834-87fb-79559760d118")
+		)
+		(pin "4"
+			(uuid "9e40f117-fe72-43c9-9ba7-3f3f6e481923")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 420 102 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d15f553-bf2f-4376-a8c1-61158afa41de")
+		(property "Reference" "R49"
+			(at 423 94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4k7"
+			(at 423 96.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 420 102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 420 102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 trip pulldown to -12V_F"
+			(at 420 102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 420 102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a338c2f6-c3c4-42ef-a16e-9e99c39c1b0f")
+		)
+		(pin "2"
+			(uuid "a215c280-9e12-4853-8f62-ed8a79116c19")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 385 105 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6fda90fa-857e-4b59-a081-1c1bff4562ba")
+		(property "Reference" "R50"
+			(at 388 97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "680R"
+			(at 388 99.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 385 105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 385 105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 trip SSR LED resistor"
+			(at 385 105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 385 105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a212b37-bb04-471f-8195-93ef16fdee7a")
+		)
+		(pin "2"
+			(uuid "2bd01c14-2e3b-4c36-87c1-7375c7746df1")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355 110 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a97cfda-bb8a-4881-bad1-17044a1dc83d")
+		(property "Reference" "R57"
+			(at 358 102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "390R"
+			(at 358 104.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 355 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 direct-mode HI SSR LED string R"
+			(at 355 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 355 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc89cd70-15d0-4299-9d7d-baf9cb41ed52")
+		)
+		(pin "2"
+			(uuid "76f5084a-34b4-4471-9f50-92e144eea821")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 415 110 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb8d707a-252d-47c9-be39-5b3740180317")
+		(property "Reference" "R58"
+			(at 418 102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "390R"
+			(at 418 104.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 415 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 415 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 direct-mode LO SSR LED string R"
+			(at 415 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 415 110 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b271d11-4930-47cb-bab0-df568d8df3f1")
+		)
+		(pin "2"
+			(uuid "156a282e-00ab-485e-91e8-e8cd059c51f1")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay_SolidState:AQY282GS")
+		(at 370 120 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ead4439-aa9e-4b72-b0f3-582a89d8f6e7")
+		(property "Reference" "U24"
+			(at 373 112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQY221N2MY"
+			(at 373 114.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OptoDevice:Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm"
+			(at 370 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 370 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 direct-mode HI switch HI_P->CH_A (1/2 par)"
+			(at 370 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AQY221N2MY"
+			(at 370 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35ebb6e7-7eaf-427e-95c3-477279c1afce")
+		)
+		(pin "2"
+			(uuid "88f5b9a6-6e64-4a98-8761-2cf3bd0333d7")
+		)
+		(pin "3"
+			(uuid "6b8442ba-9d33-454c-a915-a320f09d6458")
+		)
+		(pin "4"
+			(uuid "c8a414cd-8c64-48ce-8666-ee366f4d805b")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay_SolidState:AQY282GS")
+		(at 395 120 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b0b16534-18dd-4ba3-ad9c-65fd1ff37e8b")
+		(property "Reference" "U25"
+			(at 398 112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQY221N2MY"
+			(at 398 114.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OptoDevice:Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm"
+			(at 395 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 395 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 direct-mode HI switch HI_P->CH_A (2/2 par)"
+			(at 395 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AQY221N2MY"
+			(at 395 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "827e4153-ffda-461f-9d6d-3cb0cc52ef6a")
+		)
+		(pin "2"
+			(uuid "a04c1faa-6761-4132-b4ee-5366a9564c8a")
+		)
+		(pin "3"
+			(uuid "29799952-0663-4a20-9db4-a243ad7f562f")
+		)
+		(pin "4"
+			(uuid "efc7ed7b-f1ee-480f-ad68-2f96a4271240")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay_SolidState:AQY282GS")
+		(at 430 120 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41ba2a8e-b468-43f6-b93f-435281cfab8b")
+		(property "Reference" "U26"
+			(at 433 112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQY221N2MY"
+			(at 433 114.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OptoDevice:Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm"
+			(at 430 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 430 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 direct-mode LO switch LO_F->STAR (1/2 par)"
+			(at 430 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AQY221N2MY"
+			(at 430 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "218056f7-487d-41e0-8e2e-d4090f534f4d")
+		)
+		(pin "2"
+			(uuid "1cc39e44-9cfd-4aac-bfd5-31b94fa03e16")
+		)
+		(pin "3"
+			(uuid "9fcc1884-8d07-4952-84d6-5a8c178b6f14")
+		)
+		(pin "4"
+			(uuid "2ff85b2e-b228-4949-aad5-128a0e703ceb")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay_SolidState:AQY282GS")
+		(at 455 120 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba7ba404-d52f-4957-88b8-3ea3b4ce1e4b")
+		(property "Reference" "U27"
+			(at 458 112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AQY221N2MY"
+			(at 458 114.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OptoDevice:Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm"
+			(at 455 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 455 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 direct-mode LO switch LO_F->STAR (2/2 par)"
+			(at 455 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AQY221N2MY"
+			(at 455 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f337a1a0-0da5-45eb-bee9-53ab7e4d8edc")
+		)
+		(pin "2"
+			(uuid "f1beedc2-d101-4762-8025-de12e23b72b6")
+		)
+		(pin "3"
+			(uuid "73a631e2-0b7a-42c2-a751-93b72d54a80e")
+		)
+		(pin "4"
+			(uuid "a85f2733-4657-44cd-960b-8762a59f2eea")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC1G04")
+		(at 490 120 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dee811b9-4d30-41e7-b882-436341641be7")
+		(property "Reference" "U28"
+			(at 493 112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G04"
+			(at 493 114.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 490 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 490 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 DIRECT_L high => sink LED strings => direct mode"
+			(at 490 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LVC1G04DBVR"
+			(at 490 120 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a1b38e8-2618-492e-b249-5e04403e595c")
+		)
+		(pin "2"
+			(uuid "588407f3-b940-497b-bae4-868b0a74c4d3")
+		)
+		(pin "3"
+			(uuid "eb3d9105-f97a-40bb-8081-52f7f50d07bd")
+		)
+		(pin "4"
+			(uuid "e1bf418b-3aa0-456b-9f00-9b84d44d16ab")
+		)
+		(pin "5"
+			(uuid "7cc43a80-2498-44b1-be7e-6bd18bf92c4d")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355 145 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "88374add-606e-42c4-aa25-3eced4c203c5")
+		(property "Reference" "R51"
+			(at 358 137 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "52k3"
+			(at 358 139.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 355 145 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355 145 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 +TH divider top (+2V5)"
+			(at 355 145 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 355 145 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e0d2932-4bda-43c8-9458-e3952034709c")
+		)
+		(pin "2"
+			(uuid "febb93fe-9010-4ca8-a70c-ad8fb62faa3b")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355 158 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3574535-efca-40dc-8781-79060e6c62bf")
+		(property "Reference" "R52"
+			(at 358 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 358 152.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 355 158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355 158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 +TH divider bottom"
+			(at 355 158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 355 158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae41d076-e907-4ee4-8aad-fbe35cfa677f")
+		)
+		(pin "2"
+			(uuid "55bf906b-f223-4b78-9b78-21fc3cfcdf0d")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355 172 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13ca188e-55cd-4e24-9fd8-907bff88ea8f")
+		(property "Reference" "R53"
+			(at 358 164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "287k"
+			(at 358 166.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 355 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 -TH divider top (-12V_F)"
+			(at 355 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 355 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f788adde-db13-4346-9a28-6eac73b53da5")
+		)
+		(pin "2"
+			(uuid "145ca4ae-81b7-4355-bf13-93373d00f4a9")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 355 185 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a65ad28-5329-4211-a54e-6aeb4f97337f")
+		(property "Reference" "R54"
+			(at 358 177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 358 179.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 355 185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355 185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 -TH divider bottom"
+			(at 355 185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 355 185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d85e122-b1e6-403e-80b5-3d171d2d93a9")
+		)
+		(pin "2"
+			(uuid "c2cfdfb1-4795-4774-9213-f954d7847995")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 430 140 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f6c565c-bc1e-4ed9-88c3-84ce3719344f")
+		(property "Reference" "R55"
+			(at 433 132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 433 134.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 430 140 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 430 140 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 wired-OR pull-up for OD comparators"
+			(at 430 140 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 430 140 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f50f625d-574f-466c-a926-3bb2b1f71516")
+		)
+		(pin "2"
+			(uuid "af25d301-e71a-4fc1-8070-c52fc5f9b239")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 445 150 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a8b8e9d-9322-4d3c-9164-2dfed6fffbb8")
+		(property "Reference" "C32"
+			(at 448 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 448 144.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 445 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 445 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 comparator decouple"
+			(at 445 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 445 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ce26c2e-f786-4ca3-9e68-a4708bc6cfff")
+		)
+		(pin "2"
+			(uuid "f82d9786-4b4d-4d4b-9280-f03aa6815638")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 515 150 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3990f59c-221e-4f1a-98d1-bba7fb4b3e2a")
+		(property "Reference" "C33"
+			(at 518 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 518 144.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 515 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 515 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 latch decouple"
+			(at 515 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 515 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c85b29fb-b967-4a38-a60e-927ed4fb0585")
+		)
+		(pin "2"
+			(uuid "ce942a99-3f53-410a-8ded-70ad40fec1c2")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LM2903")
+		(at 400 150 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2dac3ef0-8aa2-4389-8783-d772a5b2aaa4")
+		(property "Reference" "U22"
+			(at 403 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM2903 (see note SEC7)"
+			(at 403 144.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 400 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 400 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 over-voltage comp: out low when HI_P > +TH"
+			(at 400 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LM2903DR"
+			(at 400 150 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2eb6f20-9d60-4f81-9bc4-444a8a024f3a")
+		)
+		(pin "2"
+			(uuid "a00b6ff5-9f5a-49aa-9bb4-44aa8a934028")
+		)
+		(pin "3"
+			(uuid "7c379297-8287-40cf-b0b9-395467663ec8")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LM2903")
+		(at 400 172 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "325de652-1350-4b6f-9229-54917e261d03")
+		(property "Reference" "U22"
+			(at 403 164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM2903 (see note SEC7)"
+			(at 403 166.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 400 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 400 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 under-voltage comp: out low when HI_P < -TH"
+			(at 400 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LM2903DR"
+			(at 400 172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "ff3f7d24-97fb-4f65-bb32-b1042613d4e7")
+		)
+		(pin "6"
+			(uuid "9448cd55-e2f6-4ed7-8e91-f05a147908a8")
+		)
+		(pin "7"
+			(uuid "7d901dc3-ca87-472e-aeb1-726cc1bbba35")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U22")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LM2903")
+		(at 430 160 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41e413b1-a06d-4fd8-973a-9549ae252b2a")
+		(property "Reference" "U22"
+			(at 433 152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM2903 (see note SEC7)"
+			(at 433 154.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 430 160 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 430 160 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 comparator power +5VD / STAR (see note re: neg-input CM)"
+			(at 430 160 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LM2903DR"
+			(at 430 160 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "f7213752-ce18-46c9-83ab-3e1634f902e0")
+		)
+		(pin "8"
+			(uuid "96ea9fb5-0a66-46fe-931a-32ad1522afd6")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U22")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74AUC1G74")
+		(at 490 165 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b59b7017-8eed-46e9-8d4f-ad12f8c034d8")
+		(property "Reference" "U23"
+			(at 493 157 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G74 (trip latch)"
+			(at 493 159.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 490 165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 490 165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SEC7 trip latch: ~PRE=TRIP_RAW set, ~CLR=RESET_N clear"
+			(at 490 165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LVC1G74"
+			(at 490 165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00a1080e-e6db-4623-ab1a-c0e40fefd970")
+		)
+		(pin "2"
+			(uuid "2143d871-3bf7-4a8d-9349-27ec9aa2df3b")
+		)
+		(pin "3"
+			(uuid "1c77f7de-c4c4-4607-a5e0-ffeec9c6979c")
+		)
+		(pin "4"
+			(uuid "a3edaa94-c846-4412-ab28-6e68c7d86232")
+		)
+		(pin "5"
+			(uuid "9874af8f-9be6-4713-beba-8232d38a74c3")
+		)
+		(pin "6"
+			(uuid "ad267c36-0acc-4936-9a2b-ff9509fea073")
+		)
+		(pin "7"
+			(uuid "9bbac43b-6333-4310-b023-cbaf03d6c69d")
+		)
+		(pin "8"
+			(uuid "53c088bc-5600-4bb1-b3a5-6d8ceacbd52a")
+		)
+		(instances
+			(project "nanovoltmeter_fe"
+				(path "/f6be03d7-b25c-48c8-8ef5-451da0ba9fa4"
+					(reference "U23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "HI_F"
+		(shape passive)
+		(at 372.54 54.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "36736296-1114-4e45-9022-5d66856a2d7b")
+	)
+	(global_label "GPROT"
+		(shape passive)
+		(at 364.92 60.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "1ab82b7f-b09b-4e4d-818d-1dca78211c44")
+	)
+	(global_label "MIDP"
+		(shape passive)
+		(at 372.54 65.08 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "71aeb09b-edbd-4edc-948b-af329d40919b")
+	)
+	(global_label "HI_P"
+		(shape passive)
+		(at 397.54 54.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "c185dbeb-611a-4452-ba7d-760c40b74845")
+	)
+	(global_label "GPROT"
+		(shape passive)
+		(at 389.92 60.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "26319f31-f57b-43c2-af4e-835b8198cc0b")
+	)
+	(global_label "MIDP"
+		(shape passive)
+		(at 397.54 65.08 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "5e5f8446-4ea6-4e97-af28-85adf1144e21")
+	)
+	(global_label "GPROT"
+		(shape passive)
+		(at 382.0 68.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "9a5633b4-c39b-4d9b-992b-ac0bf2a00780")
+	)
+	(global_label "MIDP"
+		(shape passive)
+		(at 382.0 75.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "028df3eb-9f4c-4a82-89dc-29890bbdaf1f")
+	)
+	(global_label "HI_P"
+		(shape passive)
+		(at 414.92 60.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "d9931617-99c8-4326-be28-0ce0b1cdc26a")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 422.54 54.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "ea42927a-1bf5-4e50-a537-917959231091")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 422.54 65.08 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "1db25d28-7b79-4e8f-8e0a-8ff6c6b2f27f")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 432.92 60.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "9d2d3b21-b5aa-4c09-922a-8f98f5c0096d")
+	)
+	(global_label "HI_P"
+		(shape passive)
+		(at 440.54 54.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "e344a45e-e473-4849-9b55-ce8451b83545")
+	)
+	(global_label "HI_P"
+		(shape passive)
+		(at 440.54 65.08 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "3c2b1a98-8bc6-4dbd-86f2-36032c8fa074")
+	)
+	(global_label "N_TRIPA"
+		(shape passive)
+		(at 392.38 92.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "871f764c-4d67-4ed2-b5b0-7c62be89914d")
+	)
+	(global_label "FAULT_N"
+		(shape passive)
+		(at 392.38 97.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "a7c04711-1832-4b9c-be12-baf2c2b02d0a")
+	)
+	(global_label "GPROT"
+		(shape passive)
+		(at 407.62 92.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "4dfd9417-86d8-41c7-8854-63c9772a1073")
+	)
+	(global_label "N_TRIPO"
+		(shape passive)
+		(at 407.62 97.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "38bbdfe2-84af-4a79-8d64-cc5c024eabb8")
+	)
+	(global_label "N_TRIPO"
+		(shape passive)
+		(at 420.0 98.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "b3512b62-4e23-4f29-8b1b-1fda00615b1a")
+	)
+	(global_label "-12V_F"
+		(shape passive)
+		(at 420.0 105.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "bf8a4633-c63b-479b-a20d-e2db4c2ad22e")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 385.0 101.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "29480b5b-2478-498c-8f12-2ab582767d84")
+	)
+	(global_label "N_TRIPA"
+		(shape passive)
+		(at 385.0 108.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "439b40c4-6aec-42c2-bdf2-998f4a7eb2b8")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 355.0 106.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "b65f695e-87ba-4601-bad3-a07d90599dce")
+	)
+	(global_label "DIR_A1"
+		(shape passive)
+		(at 355.0 113.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "fc230713-4f5b-4bc0-8319-4862170c8370")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 415.0 106.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "fc710c94-efc7-4ab5-b16d-df57ae6143b6")
+	)
+	(global_label "DIR_A2"
+		(shape passive)
+		(at 415.0 113.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "d9b0f59f-2d49-4d18-85a0-537e8d64634c")
+	)
+	(global_label "DIR_A1"
+		(shape passive)
+		(at 362.38 117.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "229c4d05-f075-4a90-b320-e140cf45f215")
+	)
+	(global_label "DIR_12"
+		(shape passive)
+		(at 362.38 122.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "65e2f2f3-5ab2-4788-98df-ad9f4fd082ab")
+	)
+	(global_label "CH_A"
+		(shape passive)
+		(at 377.62 117.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "e67d0233-f8e5-4d28-bb35-d78745ef8030")
+	)
+	(global_label "HI_P"
+		(shape passive)
+		(at 377.62 122.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "cd8757d1-9599-49be-a1aa-14f5fa4ed9ea")
+	)
+	(global_label "DIR_12"
+		(shape passive)
+		(at 387.38 117.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "5636a03c-8961-4c76-99d4-152440355411")
+	)
+	(global_label "DIR_SINK"
+		(shape passive)
+		(at 387.38 122.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "1c9e7b95-bd21-491d-af37-8a0023cc0d07")
+	)
+	(global_label "CH_A"
+		(shape passive)
+		(at 402.62 117.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "8d7a3bc4-c815-4d25-bc12-5cb7f7ce7589")
+	)
+	(global_label "HI_P"
+		(shape passive)
+		(at 402.62 122.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "50119744-3687-44de-96e9-2c6602837200")
+	)
+	(global_label "DIR_A2"
+		(shape passive)
+		(at 422.38 117.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "d83f7ada-8fe2-4cd6-a921-8655d9c70cf8")
+	)
+	(global_label "DIR_34"
+		(shape passive)
+		(at 422.38 122.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "0cf999ea-a0b9-47e1-89cf-6e555124b186")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 437.62 117.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "02044a44-d3c3-4518-85da-5d4e222a5222")
+	)
+	(global_label "LO_F"
+		(shape passive)
+		(at 437.62 122.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "868b54ba-aea5-454d-9799-78d2d4760771")
+	)
+	(global_label "DIR_34"
+		(shape passive)
+		(at 447.38 117.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "fbfb66ff-165e-4975-a2ea-2d23c0fed3b3")
+	)
+	(global_label "DIR_SINK"
+		(shape passive)
+		(at 447.38 122.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "20cdbbba-5d20-4130-9b87-9c13dab2067e")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 462.62 117.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "8b7889e1-10d7-48c5-be30-4ab7f4482f17")
+	)
+	(global_label "LO_F"
+		(shape passive)
+		(at 462.62 122.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "64fac28d-3d8f-4054-b051-9702260cf0eb")
+	)
+	(global_label "DIRECT_L"
+		(shape passive)
+		(at 474.76 120.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "b3283179-01e2-4893-91e4-d83af6142af8")
+	)
+	(global_label "DIR_SINK"
+		(shape passive)
+		(at 502.7 120.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "517f3be0-f40b-4b8f-adb1-95b593380d51")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 484.92 130.16 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "1d8ea626-6408-4ce9-9ba8-d3fb00656f16")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 484.92 109.84 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "4b5e86cd-7274-489c-b2f6-912a10542386")
+	)
+	(global_label "+2V5"
+		(shape passive)
+		(at 355.0 141.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "3c8225d9-51e6-480b-8465-53141e1b8bbe")
+	)
+	(global_label "TH_P"
+		(shape passive)
+		(at 355.0 148.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "1f08f1b8-24b6-4909-84d2-e99ba2fbf4c6")
+	)
+	(global_label "TH_P"
+		(shape passive)
+		(at 355.0 154.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "28628e9b-94af-4d01-89fe-a294774847ec")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 355.0 161.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "bc858e56-ec6b-48fc-8a2f-458c48bcf28a")
+	)
+	(global_label "TH_N"
+		(shape passive)
+		(at 355.0 168.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "2b4ea098-77ed-49cf-82cc-ed0ae2f13651")
+	)
+	(global_label "-12V_F"
+		(shape passive)
+		(at 355.0 175.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "b776a06f-7800-44c0-a75f-fcc0054dcd01")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 355.0 181.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "c0d6a38f-43ab-49b0-9484-465c75ba91e9")
+	)
+	(global_label "TH_N"
+		(shape passive)
+		(at 355.0 188.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "f0682801-cfb8-4c17-9e39-cb7482e74062")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 430.0 136.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "d627a4f2-8c9e-4231-924a-e368e69ecf9f")
+	)
+	(global_label "TRIP_RAW"
+		(shape passive)
+		(at 430.0 143.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "94c2b193-a2fe-4eca-bf88-c5afc33aaa33")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 445.0 146.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "9e54605e-e654-42d3-9882-c3704dacf1cc")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 445.0 153.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "845c6098-8669-4fce-b6f2-faf35dc19674")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 515.0 146.19 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "b154e864-d3cc-40ad-9ebb-45fee244bc25")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 515.0 153.81 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "d15c3d9f-63bb-478f-8575-a483c84652de")
+	)
+	(global_label "HI_P"
+		(shape passive)
+		(at 392.38 152.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "e606574b-5bd6-4aad-9230-d1e59911247b")
+	)
+	(global_label "TH_P"
+		(shape passive)
+		(at 392.38 147.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "396066ce-23e0-4961-9d95-67d63a366b6f")
+	)
+	(global_label "TRIP_RAW"
+		(shape passive)
+		(at 407.62 150.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "3a2b4622-ab42-4d60-a8e8-b4ea3e483f59")
+	)
+	(global_label "HI_P"
+		(shape passive)
+		(at 392.38 169.46 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "e8e01717-bffa-4443-9f0c-6ede6fc8376d")
+	)
+	(global_label "TH_N"
+		(shape passive)
+		(at 392.38 174.54 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "ec8efb19-699b-4ced-84f5-e7d21e021c88")
+	)
+	(global_label "TRIP_RAW"
+		(shape passive)
+		(at 407.62 172.0 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "637520c8-9e7a-494e-a565-a12ff4d97e44")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 427.46 152.38 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "81250b48-9e9f-4dd4-8c4b-d0185a7aa88d")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 427.46 167.62 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "62a846b8-b621-4a6f-9f79-6e3454f0af7b")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 477.3 170.08 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "acb9adca-69d7-4bc3-9e5e-3e43e07d815b")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 477.3 159.92 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "edf6ae3c-dc4a-4d6b-b71a-b4a6bb58938c")
+	)
+	(global_label "FAULT_N"
+		(shape passive)
+		(at 502.7 170.08 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "ef37325e-989c-47d6-8462-8c35cdfd077c")
+	)
+	(global_label "STAR"
+		(shape passive)
+		(at 492.54 177.7 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "9302e1c3-2f88-46f7-931a-0b3e79b1877b")
+	)
+	(global_label "RESET_N"
+		(shape passive)
+		(at 487.46 177.7 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "ef87d77c-e12d-4e01-9d87-3bfa65c1bbe9")
+	)
+	(global_label "TRIP_RAW"
+		(shape passive)
+		(at 487.46 152.3 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "321e83d4-b4ad-4536-8d12-0b1592f57563")
+	)
+	(global_label "+5VD"
+		(shape passive)
+		(at 492.54 152.3 0)
+		(effects
+			(font
+				(size 1.0 1.0)
+			)
+			(justify left)
+		)
+		(uuid "6dfcf066-45af-4e3c-957c-8732c9cbd645")
+	)
+	(no_connect
+		(at 502.7 159.92)
+		(uuid "1becd785-30ed-4668-9456-f403ed200244")
+	)
+	(text "SEC 7  INPUT PROTECTION + FAIL-OPEN MODE (active). Q20/Q21 DN2540 depletion pair (norm-ON, ~3R each) in HI leg; Rg holds Vgs=0. HI_P clamp Q22/Q23 (2N4117A) to STAR. On |HI_P|>~0.4V window comp U22 sets latch U23 -> trip SSR U21 pulls GPROT to -12V => FETs OFF (true disconnect). K5 DELETED: mode via SSR pairs U24/U25 (direct HI_P->CH_A) + U26/U27 (LO_F->STAR); DIRECT_L high = direct mode; bridge U4-U11 (ex BR_HI/LO now HI_P/LO_F) = chop mode; BOTH normally-open => input isolated when unpowered. TBD/VERIFY: (a) U22 window thresh R51-54 + LM2903 input-CM must tolerate HI_P to -0.6V and OD level (may need gnd-ref comp or level-shift); (b) RESET_N clears trip latch at power-up; (c) DN2540 Idss sets pre-trip surge into Q22/Q23 & bridge - check AQY221N2M pulse rating; (d) noise: Q20/Q21 Ron adds ~0.32nV/rtHz."
+		(exclude_from_sim no)
+		(at 355 40 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left)
+		)
+		(uuid "ad980c81-6ded-49cd-8ddb-01860ce5f5f6")
 	)
 	(sheet_instances
 		(path "/"

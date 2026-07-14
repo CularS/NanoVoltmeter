@@ -52,8 +52,9 @@ static void print_help(Print& o) {
   o.println(F("calabort | caldump"));
   o.println(F("state             engine/debug dump"));
   o.println(F("bias <pA>         DEBUG: servo -1000..+500 pA"));
-  o.println(F("relay <3|4|5> <s|r> DEBUG: pulse mech relay set/reset"));
+  o.println(F("relay <3|4> <s|r> DEBUG: pulse mech relay set/reset"));
   o.println(F("chopssr f|r       DEBUG: SSR chop bridge polarity"));
+  o.println(F("direct on|off     DEBUG: mode SSR (on=direct high-Z)"));
   o.println(F("touch             DEBUG: last touch point (calibration)"));
   o.println(F("json              status JSON"));
   o.println(F("net | dhcp on|off | ip/mask/gw <a.b.c.d> | hostname <n> | netapply"));
@@ -68,9 +69,10 @@ static void print_state(Print& o, const NvState& s) {
   o.print(F(" mode="));    o.println(nv_mode_name(s.mode));
   o.print(F("ssr: chop_rev=")); o.print(relays_chop_get());
   o.print(F(" range_g21="));    o.print(relays_range_get());
+  o.print(F(" direct="));       o.print(relays_direct_get());
+  o.print(F(" fault="));        o.print(relays_fault());
   o.print(F("  relays: K3_short=")); o.print(relays_get(RLY_K3_SHORT));
   o.print(F(" K4_cal="));       o.print(relays_get(RLY_K4_CAL));
-  o.print(F(" K5_bridge="));    o.print(relays_get(RLY_K5_BRIDGE));
   o.print(F(" busy="));         o.println(relays_busy());
   o.print(F("adc_v=")); o.print(s.adc_v, 6);
   o.print(F(" samples=")); o.print(adc_sample_count());
@@ -211,8 +213,8 @@ void comms_process(const String& line, Print& o, NvState& s, CommsFlags& f) {
     return;
   }
   if (!strcasecmp(cmd, "relay") && a1 && a2) {
-    int k = atoi(a1) - 3;              // K3/K4/K5
-    if (k < 0 || k > 2) { o.println(F("relay 3|4|5 s|r")); return; }
+    int k = atoi(a1) - 3;              // K3/K4
+    if (k < 0 || k > 1) { o.println(F("relay 3|4 s|r")); return; }
     relays_request((RelayId)k, tolower(a2[0]) == 's', true);
     o.println(F("pulsed"));
     return;
@@ -221,6 +223,12 @@ void comms_process(const String& line, Print& o, NvState& s, CommsFlags& f) {
     relays_chop(tolower(a1[0]) == 'r');
     o.print(F("chop bridge: "));
     o.println(relays_chop_get() ? F("REVERSED") : F("forward"));
+    return;
+  }
+  if (!strcasecmp(cmd, "direct") && a1) {
+    relays_direct(tolower(a1[0]) == 'o' && tolower(a1[1]) == 'n');
+    o.print(F("mode SSR: "));
+    o.println(relays_direct_get() ? F("DIRECT (high-Z)") : F("chop bridge"));
     return;
   }
 
@@ -291,6 +299,8 @@ void comms_json_status(Print& o, const NvState& s, const char* ip,
   o.print(F(",\"n\":"));         o.print(s.stats.n);
   o.print(F(",\"running\":"));   o.print(s.running ? F("true") : F("false"));
   o.print(F(",\"overload\":"));  o.print(s.overload ? F("true") : F("false"));
+  o.print(F(",\"fault\":"));     o.print(relays_fault() ? F("true") : F("false"));
+  o.print(F(",\"direct\":"));    o.print(relays_direct_get() ? F("true") : F("false"));
   o.print(F(",\"range\":\""));   o.print(nv_range_name(s.range));
   o.print(F("\",\"autorange\":")); o.print(s.autorange ? F("true") : F("false"));
   o.print(F(",\"mode\":\""));    o.print(nv_mode_name(s.mode));

@@ -4,16 +4,17 @@
 // ============================================================
 // Switch drivers, two kinds:
 //
-// LATCHING MECHANICAL (K3 short, K4 cal, K5 mode): 10 ms pulse on
-// the SET or RESET coil, queued one at a time. relays_busy() lets
-// the engine wait for the armature before starting a settle.
+// LATCHING MECHANICAL (K3 short, K4 cal): 10 ms pulse on the SET or
+// RESET coil, queued one at a time. relays_busy() lets the engine
+// wait for the armature before starting a settle.
 //
-// SOLID-STATE LEVELS (chop bridge, range select): PhotoMOS LED
-// drives, switched in microseconds by a GPIO level — no queue, no
-// busy state, no wear. Chop can therefore run to ~100 Hz.
+// SOLID-STATE LEVELS (chop bridge, range select, mode/direct):
+// PhotoMOS LED drives, switched in microseconds by a GPIO level — no
+// queue, no busy state, no wear. Chop can therefore run to ~100 Hz.
+// The mode switch (SEC7 fail-open, ex-K5) is now one of these levels.
 // ============================================================
 
-enum RelayId : uint8_t { RLY_K3_SHORT = 0, RLY_K4_CAL, RLY_K5_BRIDGE };
+enum RelayId : uint8_t { RLY_K3_SHORT = 0, RLY_K4_CAL };
 
 void relays_init();
 void relays_request(RelayId k, bool set, bool force = false);
@@ -26,3 +27,8 @@ void relays_chop(bool reversed);     // chop bridge polarity
 bool relays_chop_get();
 void relays_range(bool g21_200mv);   // true = G=21 (200 mV range)
 bool relays_range_get();
+void relays_direct(bool direct);     // true = source-direct high-Z, false = chop bridge
+bool relays_direct_get();
+
+// SEC7 input-protection trip status (FAULT_N, active low)
+bool relays_fault();                 // true = protection tripped

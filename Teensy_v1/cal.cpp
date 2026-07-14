@@ -82,7 +82,7 @@ bool cal_start_bias(NvState& s) {
   // 20 mV range for resolution; input open except the 100k standard.
   measure_set_range(s, RANGE_20MV);
   relays_chop(false);
-  relays_request(RLY_K5_BRIDGE, false);   // clean direct path for pA work
+  relays_direct(true);                    // clean direct path for pA work
   relays_request(RLY_K3_SHORT, false);
   relays_request(RLY_K4_CAL, true);
   s.shorted = false; s.cal_res_in = true;

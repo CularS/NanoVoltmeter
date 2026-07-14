@@ -84,9 +84,9 @@ void measure_start(NvState& s) {
   s.chop_rev = false;
   s_chop_flip_settle = false;
   if (s.mode == MODE_LOWZ_CHOP) {
-    relays_request(RLY_K5_BRIDGE, true);     // source -> SSR bridge
+    relays_direct(false);                    // source -> SSR chop bridge
   } else {
-    relays_request(RLY_K5_BRIDGE, false);    // source -> direct
+    relays_direct(true);                     // source -> direct high-Z
     s_last_az_ms = 0;                        // force an AZ first
   }
   enter_phase(s, PH_SETTLE, millis());
